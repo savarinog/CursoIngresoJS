@@ -1,5 +1,5 @@
 /*
-
+asdasdaaaa
 Savarino, Gabriel DIV Z
 Ejercicio E/S 07
 
@@ -9,63 +9,88 @@ mostrar el resulto por medio de "ALERT"
 ej.: "la Resta es 750"
 
 */ 
+
+//txtIdNumeroUno
+//txtIdNumeroDos
 function sumar()
 {	
-	var numeroUno;
-	var numeroDos;
-	var resultado;
-	numeroUno=document.getElementById("txtIdNumeroUno").value;
-	numeroUno=parseInt(numeroUno);
-	numeroDos=document.getElementById("txtIdNumeroDos").value;
-	numeroDos=parseInt(numeroDos);
-	resultado=(numeroUno+numeroDos);
+	var numeroUnoIngresado;
+	var numeroDosIngresado;
+	var suma;
+	var mensaje;
 	
-	alert("El resultado es "+ resultado)	
+	numeroUnoIngresado = document.getElementById("txtIdNumeroUno").value;
+	numeroUnoIngresado = parseInt(numeroUnoIngresado);
+	numeroDosIngresado = document.getElementById("txtIdNumeroDos").value;
+	numeroDosIngresado = parseInt(numeroDosIngresado);
+
+	suma = numeroUnoIngresado + numeroDosIngresado;
+
+	mensaje = "La suma es " + suma;
+
+	alert(mensaje);
 }
 
+//txtIdNumeroUno
+//txtIdNumeroDos
 function restar()
 {
-	
-	var numeroUno;
-	var numeroDos;
-	var resultado;
-	numeroUno=document.getElementById("txtIdNumeroUno").value;
-	numeroUno=parseInt(numeroUno);
-	numeroDos=document.getElementById("txtIdNumeroDos").value;
-	numeroDos=parseInt(numeroDos);
-	resultado=(numeroUno-numeroDos);
+	var numeroUnoIngresado;
+	var numeroDosIngresado;
+	var resta;
+	var mensaje;
 
-	alert("El resultado es "+ resultado)
+	numeroUnoIngresado = document.getElementById("txtIdNumeroUno").value;
+	numeroUnoIngresado = parseInt(numeroUnoIngresado);
+	numeroDosIngresado = document.getElementById("txtIdNumeroDos").value;
+	numeroDosIngresado = parseInt(numeroDosIngresado);
 
+	resta = numeroUnoIngresado - numeroDosIngresado;
 
+	mensaje = "La resta es " + resta;
+
+	alert(mensaje)
 
 }
 
+//txtIdNumeroUno
+//txtIdNumeroDos
 function multiplicar()
 { 
-	var numeroUno;
-	var numeroDos;
-	var resultado;
-	numeroUno=document.getElementById("txtIdNumeroUno").value;
-	numeroUno=parseInt(numeroUno);
-	numeroDos=document.getElementById("txtIdNumeroDos").value;
-	numeroDos=parseInt(numeroDos);
-	resultado=(numeroUno*numeroDos);
+	var numeroUnoIngresado;
+	var numeroDosIngresado;
+	var multiplicacion;
+	var mensaje;
+
+	numeroUnoIngresado = document.getElementById("txtIdNumeroUno").value;
+	numeroUnoIngresado = parseInt(numeroUnoIngresado);
+	numeroDosIngresado = document.getElementById("txtIdNumeroDos").value;
 	
-	alert("El resultado es "+ resultado)
+	multiplicacion = numeroUnoIngresado * numeroDosIngresado;
+
+	mensaje = "La multiplicacion es " + multiplicacion;
+	
+	alert(mensaje);
 }
 
+//txtIdNumeroUno
+//txtIdNumeroDos
 function dividir()
 {
-	var numeroUno;
-	var numeroDos;
-	var resultado;
-	numeroUno=document.getElementById("txtIdNumeroUno").value;
-	numeroUno=parseInt(numeroUno);
-	numeroDos=document.getElementById("txtIdNumeroDos").value;
-	numeroDos=parseInt(numeroDos);
-	resultado=(numeroUno/numeroDos);
+	var numeroUnoIngresado;
+	var numeroDosIngresado;
+	var division;
+	var mensaje;
+
+	numeroUnoIngresado = document.getElementById("txtIdNumeroUno").value;
+	numeroUnoIngresado = parseInt(numeroUnoIngresado);
+	numeroDosIngresado = document.getElementById("txtIdNumeroDos").value;
+	numeroDosIngresado = parseInt(numeroDosIngresado);
+
+	division = numeroUnoIngresado / numeroDosIngresado;
+
+	mensaje = "La division es " + division;
 	
-	alert("El resultado es "+ resultado)
+	alert(mensaje);
 }
 
