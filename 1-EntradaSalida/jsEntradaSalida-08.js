@@ -11,35 +11,25 @@ ej.: "El resto es 0 ."
 */
 
 function SacarResto()
-{
-
-var dividendo;
-var divisor;
-var resto;
-
-
-dividendo = document.getElementById("txtIdNumeroDividendo").value;
-
-divisor = document.getElementById("txtIdNumeroDivisor").value;
-
-dividendo = parseInt(dividendo);
-
-divisor = parseInt(divisor);
-
-resto = dividendo % divisor;
-
-mensaje = "El resto es " + resto;
-
-alert(mensaje);
-
-
-
-
-
-
-
-}
-
 
 //txtIdNumeroDividendo
 //txtIdNumeroDivisor
+
+{
+    var numeroDividendoIngresado;
+    var numeroDivisorIngresado;
+    var resto;
+    var mensaje;
+
+    numeroDividendoIngresado = document.getElementById("txtIdNumeroDividendo").value;
+    numeroDividendoIngresado = parseInt(numeroDividendoIngresado);
+    numeroDivisorIngresado = document.getElementById("txtIdNumeroDivisor").value;
+    numeroDivisorIngresado = parseInt(numeroDivisorIngresado);
+    
+    resto = numeroDividendoIngresado / numeroDivisorIngresado;
+
+    mensaje = "El resto es " + resto;
+
+    alert(mensaje);
+    
+}
