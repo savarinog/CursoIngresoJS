@@ -2,30 +2,32 @@
 Savarino, Gabriel DIV Z
 8 - TPS 01
 
-1.	Para el departamento de facturación:
-A.	Ingresar tres precios de productos y mostrar la suma de los mismos.
-B.	Ingresar tres precios de productos y mostrar el promedio de los mismos.
-C.	ingresar tres precios de productos  y mostrar precio final (más IVA 21%).
+1. Para el departamento de facturación:
+A. Ingresar tres precios de productos y mostrar la suma de los mismos.
+B. Ingresar tres precios de productos y mostrar el promedio de los mismos.
+C. ingresar tres precios de productos sumarlos y mostrar precio final (más IVA 21%).
 */
 function Sumar () 
 {
-	var precioUno;
-	var precioDos;
-	var precioTres;
+	var precioUnoIngresado;
+	var precioDosIngresado;
+	var precioTresIngresado;
 	var suma;
 	var mensaje;
 
-	precioUno = document.getElementById("txtIdPrecioUno").value;
-	precioDos = document.getElementById("txtIdPrecioDos").value;
-	precioTres = document.getElementById("txtIdPrecioTres").value;
-	precioUno = parseInt(precioUno);
-	precioDos = parseInt(precioDos);
-	precioTres = parseInt(precioTres);
+	precioUnoIngresado = document.getElementById("txtIdPrecioUno").value;
+	precioUnoIngresado = parseInt(precioUnoIngresado);
+	precioDosIngresado = document.getElementById("txtIdPrecioDos").value;
+	precioDosIngresado = parseInt(precioDosIngresado);
+	precioTresIngresado = document.getElementById("txtIdPrecioTres").value;
+	precioTresIngresado = parseInt(precioTresIngresado);
 
-	suma = precioUno + precioDos + precioTres;
-	mensaje = ("El total es " + suma);
+	suma = precioUnoIngresado + precioDosIngresado + precioTresIngresado;
 
-	alert(mensaje)
+	mensaje = "Suma total " + suma;
+
+	alert(mensaje);
+
 
 
 }
@@ -48,61 +50,67 @@ mostrar el resultado
 
 function Promedio () 
 {
-	var precioUno;
-	var precioDos;
-	var precioTres;
-	var resultadoPromedio;
+	//resultadoPromedio = resultadoPromedio.toFixed (2);
+	var precioUnoIngresado;
+	var precioDosIngresado;
+	var precioTresIngresado;
+	var promedio;
 	var mensaje;
 
-	precioUno = parseFloat(document.getElementById("txtIdPrecioUno").value);
-	precioDos = parseFloat(document.getElementById("txtIdPrecioDos").value);
-	precioTres = parseFloat(document.getElementById("txtIdPrecioTres").value);
+	precioUnoIngresado = document.getElementById("txtIdPrecioUno").value;
+	precioUnoIngresado = parseFloat(precioUnoIngresado);
+	precioDosIngresado = document.getElementById("txtIdPrecioDos").value;
+	precioDosIngresado = parseFloat(precioDosIngresado);
+	precioTresIngresado = document.getElementById("txtIdPrecioTres").value;
+	precioTresIngresado = parseFloat(precioTresIngresado);
+	
+	promedio = (precioUnoIngresado + precioDosIngresado + precioTresIngresado) / 3;
 
-	resultadoPromedio = (precioUno + precioDos + precioTres) / 3;
-
-	//resultadoPromedio = resultadoPromedio.toFixed (2);
-
-
-
-
-	mensaje = ("El promedio es " + resultadoPromedio.toFixed(2));
+	mensaje = "El promedio total es " + promedio.toFixed(2);
 
 	alert(mensaje);
-
+	
 }
+
+//txtIdPrecioUno
+//txtIdPrecioDos
+//txtIdPrecioTres
 
 //parseInt numeros enteros
 //parseFloat numeros decimales, altura, precios, etc
-//.toFixed
+//.toFixed (lo que hace es redondear)
 function PrecioFinal () 
 {
-	var precioUno;
-	var precioDos;
-	var precioTres;
+	
+	var precioUnoIngresado;
+	var precioDosIngresado;
+	var precioTresIngresado;
 	var sumaDePrecios;
 	var iva;
 	var precioConIva;
 	var mensaje;
 
-	precioUno = parseFloat(document.getElementById("txtIdPrecioUno").value);
-	precioDos = parseFloat(document.getElementById("txtIdPrecioDos").value);
-	precioTres = parseFloat(document.getElementById("txtIdPrecioTres").value);
+	precioUnoIngresado = document.getElementById("txtIdPrecioUno").value;
+	precioUnoIngresado = parseFloat(precioUnoIngresado);
+	precioDosIngresado = document.getElementById("txtIdPrecioDos").value;
+	precioDosIngresado = parseFloat(precioDosIngresado);
+	precioTresIngresado = document.getElementById("txtIdPrecioTres").value;
+	precioTresIngresado = parseFloat(precioTresIngresado);
 
-	sumaDePrecios = precioUno + precioDos + precioTres;
+	sumaDePrecios = precioUnoIngresado + precioDosIngresado + precioTresIngresado;
 
 	iva = sumaDePrecios * 0.21;
 
 	precioConIva = sumaDePrecios + iva;
 
-	mensaje = "El precio final es: " + precioConIva.toFixed(2);
-:
+	//mensaje = "El precio final es " + precioConIva + " + iva"; //periodico
+	mensaje = "El precio final es: " + precioConIva.toFixed(2) + " + iva";
+
 	alert(mensaje);
 
-
-
-
+	
 }
-
+//C. ingresar tres precios de productos sumarlos y mostrar precio final (más IVA 21%).
 //entradas:
 //var 3 precios
 //valores de id precios 
